@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" th:href="@{/style.css}">
+    </head>
+    <body>
+
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="navbar-brand">
+                    <a href="index.html">
+                        <img src="img/logo.jpg" alt="">
+                    </a>
+                </div>
+    
+    
+            <ul class="navbar-navbar-right">
+                <li>
+                    <a th:href="@{/}">Home</a>
+                </li>
+                <li>
+                    <a th:href="@{/about}">About</a>
+                </li>
+                <li>
+                    <a th:href="@{/}">Menu</a>
+                </li>
+                <li>
+                    <a th:href="@{/contact}">Contact</a>
+                </li>
+            </ul>
+        </div>
+        </nav>
+
+            <div class="contact">
+            <div class="wrapper-img"><img src="img/contact.jpg" alt=""></div>
+                <div class="contact-form-container">
+                    <form class="form-control" method="post" th:action="@{/submitform}">
+                    <p class="text-contact">Your feedback is really appreciate</p>
+                    <p class="text-contact">Reservations are not accepted through email.</p>
+                <div class="First-Name"> 
+                   <label for="FirstName">FirstName</label>
+                   <input type="text" id="FirstName" name="FirstName">
+                </div>
+
+                <div class="Last-Name"> 
+                   <label for="LastName">LastName</label>
+                   <input type="text" id="LastName" name="LastName">
+                </div>
+                
+                <div class="Email-text">
+                    <label for="Email">Email</label>
+                    <input type="text" id="Email" name="Email">
+                </div>
+
+                <div class="Message"> 
+                   <label for="Message">Message</label>
+                   <textarea id="Message" name="Message"></textarea>
+                </div>
+                <div class="submit">
+                   <input
+                   type="submit"
+                   value="Submit"
+                   id="submit-btn"
+                   class="submit-btn"
+                 />
+                </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <div class="footer-container">
+                <div class="row">
+            <div class="Company">
+                <article class="footer-con">
+                    <h3>Company Details</h3>
+                    <p>13000-888-666</p>
+                    <p>email@gmail.com</p>
+                    <p>100 Street Name</p>
+                    <p>City,State,0000</p>
+                </article>
+            </div>
+    
+            <div class="working-hours">
+                <article class="footer-con">
+                    <h3>Working hours</h3>
+                    <p>Monday:10am-8pm</p>
+                    <p>Saturday:10am-7pm</p>
+                    <p>Sunday: closed</p>
+                </article>
+            </div>
+    
+            <div class="service">
+                <article class="footer-con">
+                    <h3>Location</h3>
+                    <p>Kuala Lumpur</p>
+                    <p>Johor Bahru</p>
+                    <p>Penang</p>
+                </article>
+            </div>
+        </div>
+
+       <div class="name">
+        ©NANYANG Kopitian 2021.All Right Reserved
+       </div>
+    
+
+
+        <script src="" async defer></script>
+    </body>
+</html>
